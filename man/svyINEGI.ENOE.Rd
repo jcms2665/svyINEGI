@@ -18,8 +18,6 @@ Matriz de resultados.
 Precisiones estadísticas.
 }
 \examples{
-library(svyINEGI)
-data(SDEMT115)
 svyINEGI.ENOE("CLASE2",SDEMT115)
 }
 

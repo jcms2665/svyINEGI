@@ -4,8 +4,6 @@
 #' @param data Base de datos.
 #' @return Matriz de resultados.
 #' @examples
-#' library(svyINEGI)
-#' data(SDEMT115)
 #' svyINEGI.ENOE("CLASE2",SDEMT115)
 #' 
 #' @export
@@ -19,10 +17,10 @@ svyINEGI.ENOE<-function(u, data = parent.frame()){
   
   data$UNO<-1
   options(survey.lonely.psu="adjust")
-  mydesign <- svydesign(id = ~UPM,data = data,weight = ~FAC_MTI,strata = ~EST_D,nest=TRUE)
+  mydesign <- svydesign(id = ~UPM,data = data,weight = ~FAC,strata = ~EST_D,nest=TRUE)
   sy1<-round(svyby(~UNO,~data[,u], mydesign, svytotal), digits = 0)
   #se1<-round(data.frame(SE(sy1)), digits = 0)
-  cv1<-round(data.frame(cv(sy1)*100), digits = 2)
+  cv1<-round(data.frame(cv(sy1)*100), digits = 3)
   #cf1<-round(data.frame(coef(sy1)), digits = 0)
   li1<-round(data.frame(confint(sy1, level = 0.90)), digits = 0)
   
