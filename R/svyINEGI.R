@@ -1,7 +1,16 @@
-#----- Primer intento para generar precisiones estadísticas -------
+#' @title Precisiones estadísticas.
+#' @name svyINEGI.ENOE
+#' @param u Nombre de la variable. 
+#' @param data Base de datos.
+#' @return Matriz de resultados.
+#' @examples
+#' library(svyINEGI)
+#' data(SDEMT115)
+#' svyINEGI.ENOE("CLASE2",SDEMT115)
+#' 
+#' @export
 
-
-svyINEGI<-function(u, data = parent.frame()){
+svyINEGI.ENOE<-function(u, data = parent.frame()){
   if(!any(names(data) == u[1]))
     stop("[!] La variable no está en la base")
   
@@ -25,3 +34,4 @@ svyINEGI<-function(u, data = parent.frame()){
   names(r) <- c("Categ","Estimacion","ErrStd","CV","LInf(90%)","LSup(90%)","¿Signif?")
   return(r)
 }
+ 
