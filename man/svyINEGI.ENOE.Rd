@@ -2,7 +2,7 @@
 % Please edit documentation in R/svyINEGI.R
 \name{svyINEGI.ENOE}
 \alias{svyINEGI.ENOE}
-\title{Precisiones estadísticas.}
+\title{Precisiones estadisticas.}
 \usage{
 svyINEGI.ENOE(u, data = parent.frame())
 }
@@ -15,9 +15,13 @@ svyINEGI.ENOE(u, data = parent.frame())
 Matriz de resultados.
 }
 \description{
-Precisiones estadísticas.
+Precisiones estadisticas.
 }
 \examples{
+\dontrun{
+library(LifeTable)
+data(SDEMT115)
 svyINEGI.ENOE("CLASE2",SDEMT115)
+}
 }
 

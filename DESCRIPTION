@@ -10,5 +10,4 @@ License: MIT
 LazyData: true
 Imports: foreign,
     survey,
-    data.table,
-    questionr
+    data.table
