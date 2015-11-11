@@ -14,7 +14,8 @@
 
 svyINEGI.ENOE<-
   function(u, data = parent.frame()){
-  if(!any(names(data) == u[1]))
+    library(survey)
+    if(!any(names(data) == u[1]))
     stop("[!] La variable no está en la base")
   
   if(!is.numeric(data[,u]))
