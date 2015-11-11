@@ -5,7 +5,7 @@
 #' @return Matriz de resultados.
 #' @examples
 #' \dontrun{
-#' library(LifeTable)
+#' library(svyINEGI)
 #' data(SDEMT115)
 #' svyINEGI.ENOE("CLASE2",SDEMT115)
 #' }
@@ -35,7 +35,7 @@ svyINEGI.ENOE<-
     if(cv1[j,1]<15){cc[j,1]<-"Y"}else{cc[j,1]<-"N"}
   }
   r<-data.frame(sy1,cv1,li1,cc)
-  names(r) <- c("Categ","Estimacion","ErrStd","CV","LInf(90%)","LSup(90%)","¿Signif?")
+  names(r) <- c("Categ","Estim","ErrStd","CV","LInf(90%)","LSup(90%)","Signif?")
   return(r)
   }
 #' 
