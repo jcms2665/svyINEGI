@@ -14,7 +14,7 @@
 
 svyINEGI.ENOE<-
   function(u, data = parent.frame()){
-    library(survey)
+
     if(!any(names(data) == u[1]))
     stop("[!] La variable no está en la base")
   
@@ -39,20 +39,4 @@ svyINEGI.ENOE<-
   return(r)
   }
 #' 
-NULL
 
-#' @name SDEMT115
-#' 
-#' @title Cuestionario Sociodemografico 1-15, INEGI.
-#' 
-#' @description Ejemplo de una base de datos del INEGI.
-#' 
-#' @details Algunas variables son numericas y otras cadena.
-#' 
-#' @source Cuestionario sociodemografico ENOE. \url{http://www3.inegi.org.mx/sistemas/microdatos/encuestas.aspx?c=34523&s=est}.
-#' 
-#' @references  FD ENOE \url{http://www.inegi.org.mx/est/contenidos/proyectos/encuestas/hogares/regulares/enoe/doc/con_basedatos_proy2010.pdf}. 
-#' 
-#' @docType data
-#' 
-NULL
