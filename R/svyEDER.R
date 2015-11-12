@@ -7,8 +7,7 @@
 
 errEDER<-
   function(u, data = parent.frame()){
-    #data(sysdata)
-    mer<-merge(sysdata,data[,c("FOLIO",u)],by=c("FOLIO"),all.x=TRUE)    
+    mer<-merge(CAR_EST,data[,c("FOLIO",u)],by=c("FOLIO"),all.x=TRUE)    
     mer$UNO<-1
     options(survey.lonely.psu="adjust")
     mydesign <- svydesign(id = ~UPM,data = mer,weight = ~FAC,strata = ~EST_DIS,nest=TRUE)
