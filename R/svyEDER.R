@@ -5,6 +5,7 @@
 #' @return Matriz de resultados.
 #' @export
 
+
 errEDER<-
   function(u, data = parent.frame()){
     mer<-merge(CAR_EST,data[,c("FOLIO",u)],by=c("FOLIO"),all.x=TRUE)    
