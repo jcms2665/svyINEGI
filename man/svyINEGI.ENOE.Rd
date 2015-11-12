@@ -19,7 +19,7 @@ Precisiones estadisticas.
 }
 \examples{
 \dontrun{
-library(LifeTable)
+library(svyINEGI)
 data(SDEMT115)
 svyINEGI.ENOE("CLASE2",SDEMT115)
 }
