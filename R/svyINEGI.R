@@ -1,14 +1,12 @@
-#' @title Precisiones estadisticas.
+#' @title Precisiones estadísticas, ENOE
 #' @name svyINEGI.ENOE
+#' @description Pruebas de significancia estadística de los indicadores de la Encuesta Nacional de Ocupación y Empleo (ENOE)
 #' @param u Nombre de la variable. 
 #' @param data Base de datos.
 #' @return Matriz de resultados.
-#' @examples
-#' \dontrun{
-#' library(svyINEGI)
-#' data(SDEMT115)
-#' svyINEGI.ENOE("CLASE2",SDEMT115)
-#' }
+#' @author Julio C. 
+#' @note Cualquier sugerencia es bienvenida
+#' @details Para cada categoria, la funcion genera: la estimacion del indicador (Estim); error estandar (ErrStd); coeficiente de variación (CV); limite inferior (LInf(90%));limite superior (LSup(90%)); evaluacion significancia (Signif?)
 #' @export
 #' 
 
@@ -16,10 +14,10 @@ svyINEGI.ENOE<-
   function(u, data = parent.frame()){
 
     if(!any(names(data) == u[1]))
-    stop("[!] La variable no está en la base")
+    stop("[!] La variable ",u," no está en la base")
   
   if(!is.numeric(data[,u]))
-    stop("[!] La variable debe ser numérica")
+    stop("[!] La variable ",u," debe ser numérica")
   
   data$UNO<-1
   options(survey.lonely.psu="adjust")

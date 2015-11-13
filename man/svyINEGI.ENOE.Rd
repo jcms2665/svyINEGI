@@ -2,7 +2,7 @@
 % Please edit documentation in R/svyINEGI.R
 \name{svyINEGI.ENOE}
 \alias{svyINEGI.ENOE}
-\title{Precisiones estadisticas.}
+\title{Precisiones estadísticas, ENOE}
 \usage{
 svyINEGI.ENOE(u, data = parent.frame())
 }
@@ -15,13 +15,15 @@ svyINEGI.ENOE(u, data = parent.frame())
 Matriz de resultados.
 }
 \description{
-Precisiones estadisticas.
+Pruebas de significancia estadística de los indicadores de la Encuesta Nacional de Ocupación y Empleo (ENOE)
 }
-\examples{
-\dontrun{
-library(svyINEGI)
-data(SDEMT115)
-svyINEGI.ENOE("CLASE2",SDEMT115)
+\details{
+Para cada categoria, la funcion genera: la estimacion del indicador (Estim); error estandar (ErrStd); coeficiente de variación (CV); limite inferior (LInf(90%));limite superior (LSup(90%)); evaluacion significancia (Signif?)
 }
+\note{
+Cualquier sugerencia es bienvenida
+}
+\author{
+Julio C.
 }
 

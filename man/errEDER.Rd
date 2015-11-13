@@ -2,7 +2,7 @@
 % Please edit documentation in R/svyEDER.R
 \name{errEDER}
 \alias{errEDER}
-\title{Precisiones estadisticas EDER.}
+\title{Precisiones estadísticas, EDER 2011}
 \usage{
 errEDER(u, data = parent.frame())
 }
@@ -15,6 +15,15 @@ errEDER(u, data = parent.frame())
 Matriz de resultados.
 }
 \description{
-Precisiones estadisticas EDER.
+Pruebas de significancia estadística de los indicadores de la Encuesta Demográfica Retrospectiva (EDER) 2011
+}
+\details{
+Para cada categoria, la funcion genera: la estimacion del indicador (Estim); error estandar (ErrStd); coeficiente de variación (CV); limite inferior (LInf(90%));limite superior (LSup(90%)); evaluacion significancia (Signif?)
+}
+\note{
+Cualquier sugerencia es bienvenida
+}
+\author{
+Julio C.
 }
 
