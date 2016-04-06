@@ -1,12 +1,16 @@
 # Estimación de la varianza en encuestas complejas / Variance estimation in complex samples
 =================
 
+
+
 ## Español
 
 
 El objetivo de este paquete es cálcular la _varianza_, _coeficiente de variación_ e _intervalos de confianza_ de estimaciones hechas con muestras complejas para determinar su nivel de confiabilidad.  Si bien el paquete puede ser usado con cualquier muestra compleja, el paquete esta diseñado para facilitar el manejo de la Encuesta Nacional de Ocupación y Empleo  (ENOE) y la Encuesta Encuesta Demográfica Retrospectiva (EDER) 2011.
 
 **Nota:** En el caso de la EDER, las bases de datos que están disponibles en internet no cuentan con el _estrato de diseño_, este campo se solictió al _INEGI_ vía _atención de usuarios_.
+
+
 
 
 
@@ -35,15 +39,26 @@ Para poder ejecutar este programa se requiere seguir los siguientes pasos:
 **Nota**: Los usuarios de Windows necesitan instalar [Rtools](https://cran.r-project.org/bin/windows/Rtools/) para poder instalar  paquetes de Github.
 
 
+
+
+
 #### Ejemplo
 
 Supongase que se está trabajando con la base _sociodemográfico del segundo trimestre de 2015_ (SDEMT215) y se queire obtener las precisiones estadísticas de la variable _posición en la ocupación_ (POS_OCU). Entonces, basta con ejecutar la variable de la siguiente manera:
 
-    ```
+```
+svyINEGI.ENOE("POS_OCU",SDEMT215)
+
+```
+
+```
               svyINEGI.ENOE("POS_OCU",SDEMT215)
-    ```
+```
+
 
 El resultado es el siguiente:
+
+![alt tag](https://cloud.githubusercontent.com/assets/13545121/14332444/3e3199ae-fc0f-11e5-95fe-64627ccd699a.jpg)
 
 
 
