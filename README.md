@@ -44,13 +44,14 @@ Para poder ejecutar este programa se requiere seguir los siguientes pasos:
 
 #### Ejemplo
 
-Supongase que se está trabajando con la base _sociodemográfico del segundo trimestre de 2015_ (SDEMT215) y se queire obtener las precisiones estadísticas de la variable _posición en la ocupación_ (POS_OCU). Entonces, basta con ejecutar la variable de la siguiente manera:
+Supongase que se está trabajando con la base _sociodemográfico del segundo trimestre de 2015_ (SDEMT215) y se queire obtener las precisiones estadísticas de la variable _posición en la ocupación_ (POS_OCU). Entonces, basta con ejecutar el siguiente comando:
 
 
 ```
               svyINEGI.ENOE("POS_OCU",SDEMT215)
 ```
 
+**Nota:** El nombre de la variable debe estar entre comillas
 
 El resultado es el siguiente:
 
