@@ -35,4 +35,15 @@ Para poder ejecutar este programa se requiere seguir los siguientes pasos:
 **Nota**: Los usuarios de Windows necesitan instalar [Rtools](https://cran.r-project.org/bin/windows/Rtools/) para poder instalar  paquetes de Github.
 
 
+#### Ejemplo
+
+Supongase que se está trabajando con la base _sociodemográfico del segundo trimestre de 2015_ (SDEMT215) y se queire obtener las precisiones estadísticas de la variable _posición en la ocupación_ (POS_OCU). Entonces, basta con ejecutar la variable de la siguiente manera:
+
+    ```
+              svyINEGI.ENOE("POS_OCU",SDEMT215)
+    ```
+
+El resultado es el siguiente:
+
+
 
