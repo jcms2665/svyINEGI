@@ -36,8 +36,9 @@ Para poder ejecutar este programa se requiere seguir los siguientes pasos:
               install_github("jcms2665/svyINEGI")
     ```
 
-**Nota**: Los usuarios de Windows necesitan instalar [Rtools](https://cran.r-project.org/bin/windows/Rtools/) para poder instalar  paquetes de Github.
+**Nota1**: Los usuarios de Windows necesitan instalar [Rtools](https://cran.r-project.org/bin/windows/Rtools/) para poder instalar  paquetes de Github.
 
+**Nota2**: Las variables deben ser numéricas
 
 
 
