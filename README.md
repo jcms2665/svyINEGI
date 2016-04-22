@@ -8,7 +8,7 @@
 
 El objetivo de este paquete es cálcular la _varianza_, _coeficiente de variación_ e _intervalos de confianza_ de estimaciones hechas con muestras complejas para determinar su nivel de confiabilidad.  Si bien el paquete puede ser usado con cualquier muestra compleja, el paquete esta diseñado para facilitar el manejo de la **Encuesta Nacional de Ocupación y Empleo**  (ENOE) y la **Encuesta Encuesta Demográfica Retrospectiva (EDER) 2011**.
 
-**Nota:** En el caso de la **EDER**, las bases de datos que están disponibles en internet no cuentan con el _estrato de diseño_, este campo se solictió al _INEGI_ vía _atención de usuarios_.
+**Nota:** En el caso de la **EDER**, las bases de datos que están disponibles en internet no cuentan con el _estrato de diseño_, este campo se solictió al INEGI vía _atención de usuarios_.
 
 
 
