@@ -38,9 +38,7 @@ Para poder ejecutar este programa se requiere seguir los siguientes pasos:
               install_github("jcms2665/svyINEGI")
     ```
 
-**Nota 1**: Los usuarios de Windows necesitan instalar [Rtools](https://cran.r-project.org/bin/windows/Rtools/) para poder instalar  paquetes de Github.
-
-**Nota 2**: Las variables deben ser numéricas
+**Nota 1**: Los usuarios de Windows necesitan instalar [Rtools](https://cran.r-project.org/bin/windows/Rtools/) para poder instalar  paquetes de Github. Además, las variables deben ser numéricas
 
 
 
@@ -56,10 +54,7 @@ Supongase que se está trabajando con la base sociodemográfico del segundo trim
 
 
 
-**Nota 3:** El nombre de la variable debe estar entre comillas
-
-
-**Nota 4:** Para el caso de la **EDER** es el mismo procedimiento
+**Nota 2:** Para el caso de la **EDER** es el mismo procedimiento
 
 
 
