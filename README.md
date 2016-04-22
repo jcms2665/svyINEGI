@@ -6,9 +6,9 @@
 ## Objetvivo
 
 
-El objetivo de este paquete es cálcular la _varianza_, _coeficiente de variación_ e _intervalos de confianza_ de estimaciones hechas con muestras complejas para determinar su nivel de confiabilidad.  Si bien el paquete puede ser usado con cualquier muestra compleja, el paquete esta diseñado para facilitar el manejo de la **Encuesta Nacional de Ocupación y Empleo**  (ENOE) y la **Encuesta Demográfica Retrospectiva (EDER) 2011**.
+El objetivo de este paquete es cálcular la _varianza_, _coeficiente de variación_ e _intervalos de confianza_ de estimaciones hechas con muestras complejas para determinar su nivel de confiabilidad.  Si bien el paquete puede ser usado con cualquier muestra compleja, el paquete esta diseñado para facilitar el manejo de la **Encuesta Nacional de Ocupación y Empleo**  (ENOE) y la **Encuesta Demográfica Retrospectiva** (EDER) 2011.
 
-**Nota:** En el caso de la **EDER**, las bases de datos que están en el sitio de internet no cuentan con el campo _estrato de diseño_, sin embargo, éste se solicitó al INEGI vía _atención de usuarios_ para poder generar las precisiones estadísticas de las estimaciones. En la carperta [Base](https://github.com/jcms2665/svyINEGI/tree/master/Base) se encuentra la base de datos de la Encuesta Demográfica Retrospectiva (EDER) 2011 con el campo "_est_dis_" que corresponde al estrato diseño.
+En el caso de la **EDER**, las bases de datos que están en el sitio de internet no cuentan con el campo _estrato de diseño_, sin embargo, éste se solicitó al INEGI vía _atención de usuarios_ para poder generar las precisiones estadísticas de las estimaciones. En la carperta [Base](https://github.com/jcms2665/svyINEGI/tree/master/Base) se encuentra la base de datos de la Encuesta Demográfica Retrospectiva (EDER) 2011 con el campo "_est_dis_" que corresponde al estrato diseño.
 
  
 
