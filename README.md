@@ -55,8 +55,9 @@ Supongase que se está trabajando con la base sociodemográfico del segundo trim
 ```
 
 
-**Nota:** El nombre de la variable debe estar entre comillas
+**Nota 1:** El nombre de la variable debe estar entre comillas
 
+**Nota 2:** Para el caso de la **EDER** es el mismo procedimiento
 
 El resultado es el siguiente:
 
